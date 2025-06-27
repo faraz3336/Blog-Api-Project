@@ -41,6 +41,9 @@ app.use(express.static("public"));
 app.set("view engine","ejs"); 
 
 //Write your code here//
+app.get("/", (req, res) => {
+  res.send("Backend API is live 🚀");
+});
 
 //CHALLENGE 1: GET All posts
 app.get("/posts",(req,res) => {
